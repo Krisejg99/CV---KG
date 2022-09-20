@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+</head>
+
+<body>
+
+    <!--form-->
+    <!--sökfält + Submit & Reset-->
+    <form action="" method="post">
+
+        <label for="firstname">Förnamn</label>
+        <input type="text" name="firstname" id="firstname" required placeholder="Förnamn" />
+
+        <label for="lastname">
+            <span>Efternamn</span>
+            <input type="text" name="lastname" id="lastname" required placeholder="Efternamn" />
+        </label>
+
+        <label for="email">
+            <span>EMAIL</span>
+            <input type="email" name="email" id="email" required placeholder="exempel@gmail.com" />
+        </label>
+
+        <input type="hidden" name="userID" value="56">
+        <button type="submit">Skicka</button>
+        <button type="reset">Reset</button>
+
+        <textarea name="description" id="" cols="30" rows="10"></textarea>
+
+        <div>
+            <label for="">EMAIL<input type="checkbox" name="course" value="EMAIL" checked></label>
+            <label for="">PHONE<input type="checkbox" name="course" value="PHONE"></label>
+        </div>
+
+        <div>
+            <label for="">FED22<input type="radio" name="course" value="fed22" checked></label>
+            <label for="">FED21<input type="radio" name="course" value="fed21"></label>
+        </div>
+
+        <div>
+            <select name="selected-course" id="">
+                <option value="fed21">Fed21</option>
+                <option value="fed22" selected>Fed22</option>
+                <option value="fed23">Fed23</option>
+
+            </select>
+        </div>
+
+        <!--multiple select option group-->
+        <div>
+            <select name="pets" id="" multiple>
+                <optgroup label="house pets">
+                    <option value="Dog">Dog</option>
+                    <option value="Lizzard">Lizzard</option>
+                    <option value="Cat">Cat</option>
+                </optgroup>
+                <optgroup label="flying">
+                    <option value="Birds">Birds</option>
+                    <option value="Lizzards">Lizzards</option>
+                    <option value="Dragon">Dragon</option>
+                </optgroup>
+            </select>
+        </div>
+
+    </form>
+
+
+
+
+
+</body>
+
+</html>
