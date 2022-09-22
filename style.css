@@ -1,11 +1,90 @@
+/*
+@import "en annan css";
+
+@media screen and (min-width: 900px){
+    body {
+        background-color: aqua;
+    }
+
+}
+*/
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(252, 244, 233);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 header {
     background-color: rgb(167, 255, 227);
+    padding: 0% 15%;
 }
 
 main {
     background-color: rgb(187, 245, 255);
+    padding: 0% 20%;
 }
 
 footer {
     background-color: rgb(167, 255, 227);
+    padding: 0px 150px;
+}
+
+
+
+
+
+
+nav {
+    padding: 15px 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    
+}
+
+nav ul li {
+    margin: 20px 20px;
+    padding: 0px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: mediumseagreen;
+}
+
+nav ul li a:hover {
+    color: indigo;
+    padding-top: calc(2em - 2px);
+}
+
+.intro {
+    display: flex;
+    padding-top: 150px;
+}
+
+.intro img {
+    padding-right: 50px;
+}
+
+.personalProfileDiv {
+    border: black solid 1px;
+}
+
+.workExperienceDiv {
+    border: black solid 1px;
+}
+
+.educationDiv {
+    border: black solid 1px;
+}
+
+.contactDiv {
+    border: black solid 1px;
 }
