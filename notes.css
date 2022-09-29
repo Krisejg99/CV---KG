@@ -1,0 +1,83 @@
+/* calc exempel
+div {
+    width: calc(50%-20px);
+}
+*/
+
+/*flex start*/
+.wrapper {
+    margin-top: 200px;
+    background-color: lightblue;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    gap: 10px;
+}
+
+.flex-item {
+    height: 100px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    flex-grow: 0;
+}
+/*flex end*/
+
+/*
+.flex-item1 {
+    alla items har order: 0; som standard
+    order: 1;
+}
+*/
+
+
+/*grid start*/
+.wrapper2 {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.box, .box2 {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.wrapper3 {
+    margin-top: 100px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 60px 60px 60px;
+    grid-template-areas:
+        "....... header header"
+        "sidebar content content"
+        "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
+/*grid end*/

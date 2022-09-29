@@ -8,22 +8,24 @@
 
 }
 */
+
 body {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgb(252, 244, 233);
+    background-color: rgb(187, 245, 255);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header {
     background-color: rgb(167, 255, 227);
-    padding: 0% 15%;
+    /*padding: 0% 20% 0% 20%;*/
 }
 
 main {
-    background-color: rgb(187, 245, 255);
-    padding: 0% 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {
@@ -36,8 +38,10 @@ footer {
 
 
 
+
 nav {
     padding: 15px 0px;
+    max-width: 1700px;
 }
 
 nav ul {
@@ -45,9 +49,17 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: right;
-    
+    justify-content: flex-end;
+    padding-right: 0;
 }
+
+@media screen and (max-width: 550px) {
+    nav ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+    }
 
 nav ul li {
     margin: 20px 20px;
@@ -64,27 +76,84 @@ nav ul li a:hover {
     padding-top: calc(2em - 2px);
 }
 
-.intro {
+.intro-div {
+    border: 2px solid rgb(255, 238, 0);
     display: flex;
+    flex-wrap: wrap;
     padding-top: 150px;
+    max-width: 1100px;
 }
 
-.intro img {
+.intro-div img {
     padding-right: 50px;
 }
 
-.personalProfileDiv {
-    border: black solid 1px;
+.intro-pic {
+    border: 1px solid rgb(200, 117, 255);
 }
 
-.workExperienceDiv {
-    border: black solid 1px;
+.intro-titles {
+    border: 1px solid rgb(255, 148, 193);
 }
 
-.educationDiv {
-    border: black solid 1px;
+.intro-facts {
+    border: 1px solid rgb(69, 90, 255);
 }
 
-.contactDiv {
-    border: black solid 1px;
+.grid {
+    border: rgb(255, 117, 117) solid 2px;
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(50, 55px);
+    max-width: 1100px;
+    
+}
+
+.personal-profile-div {
+    border: black solid 2px;
+    max-width: 1100px;
+    grid-column-start: 3;
+    grid-column-end: 16;
+    grid-row-start: 3;
+    grid-row-end: 13;
+    padding: 20%;
+    box-shadow: 0px 0px 20px;
+}
+
+.work-experience-div {
+    border: black solid 2px;
+    max-width: 1100px;
+    grid-column-start: 7;
+    grid-column-end: span 13;
+    grid-row-start: 12;
+    grid-row-end: span 21;
+    padding: 15%;
+    box-shadow: 0px 0px 20px;
+}
+
+.education-div {
+    border: black solid 2px;
+    max-width: 1100px;
+    grid-column-start: 4;
+    grid-column-end: span 10;
+    grid-row-start: 31;
+    grid-row-end: span 12;
+    padding: 18%;
+    box-shadow: 0px 0px 20px;
+}
+
+.contact-div {
+    border: black solid 2px;
+    max-width: 1100px;
+    grid-column-start: 10;
+    grid-column-end: span 9;
+    grid-row-start: 41;
+    grid-row-end: span 7;
+    padding: 20%;
+    box-shadow: 0px 0px 20px;
+}
+
+.grid div {
+    /*background-image: url(https://www.clipartmax.com/png/middle/11-112274_sticky-note-png-sticky-notes-with-a-transparent-background.png);*/
+    background-color: rgb(255, 255, 143);
 }
