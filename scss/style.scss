@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+}
+
+@import 'config';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(187, 245, 255);
+        font-family: $font;
+    
+        a {
+            text-decoration: none;
+        }
+    
+        li {
+            list-style-type: none;
+        }
+    
+    }
+    
+    header {
+        background-color: beige;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer {
+        background-color: rgb(167, 255, 227);
+        padding: 0px 150px;
+    }
+    
+    .navbar {
+        background-color: coral;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .dropdown {
+
+            right: 0;
+            
+
+            button {
+
+            }
+
+            .dropdown-content {
+                background-color: rgba(0, 0, 0,);
+                width: 130px;
+                overflow: auto;
+                right: 0;
+                position: absolute;
+                z-index: 1;
+                margin-top: 19.5px;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+                padding: 15px 30px;
+                border-bottom: 1px solid green;
+                border-radius: 20%;
+                text-align: center;
+    
+                a {
+                    color: green;
+    
+                    &:hover {
+                        color: black;
+                        padding-top: calc(2em - 2px);
+                    }
+                }
+            }
+        }
+    }
+
+    .show {
+        display: block;
+    }
+    
+    .intro-div {
+        border: 2px solid rgb(255, 238, 0);
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 150px;
+        max-width: 1100px;
+    
+        img {
+            height: 200px;
+            width: 200px;
+        }
+    }
+    
+    .intro-pic {
+        border: 1px solid rgb(200, 117, 255);
+    }
+    
+    .intro-titles {
+        border: 1px solid rgb(255, 148, 193);
+    }
+    
+    .intro-facts {
+        border: 1px solid rgb(69, 90, 255);
+    }
+    
+    .grid {
+        border: rgb(255, 117, 117) solid 2px;
+        display: grid;
+        grid-template-columns: repeat(20, 55px);
+        grid-template-rows: repeat(50, 55px);
+        max-width: 1100px;
+    
+        div {
+            /*background-image: url(https://www.clipartmax.com/png/middle/11-112274_sticky-note-png-sticky-notes-with-a-transparent-background.png);*/
+            background-color: rgb(255, 255, 143);
+        }
+    }
+    
+    .personal-profile-div {
+        border: black solid 2px;
+        max-width: 1100px;
+        grid-column-start: 3;
+        grid-column-end: 16;
+        grid-row-start: 3;
+        grid-row-end: 13;
+        padding: 20%;
+        box-shadow: 0px 0px 20px;
+    }
+    
+    .work-experience-div {
+        border: black solid 2px;
+        max-width: 1100px;
+        grid-column-start: 7;
+        grid-column-end: span 13;
+        grid-row-start: 12;
+        grid-row-end: span 21;
+        padding: 15%;
+        box-shadow: 0px 0px 20px;
+    }
+    
+    .education-div {
+        border: black solid 2px;
+        max-width: 1100px;
+        grid-column-start: 4;
+        grid-column-end: span 10;
+        grid-row-start: 31;
+        grid-row-end: span 12;
+        padding: 18%;
+        box-shadow: 0px 0px 20px;
+    }
+    
+    .contact-div {
+        border: black solid 2px;
+        max-width: 1100px;
+        grid-column-start: 10;
+        grid-column-end: span 9;
+        grid-row-start: 41;
+        grid-row-end: span 7;
+        padding: 20%;
+        box-shadow: 0px 0px 20px;
+    }
+    
+
+}
+
+
+
+
+@media screen and (max-width:2000px) {
+
+    nav {
+        position: fixed;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        padding: 4px 0;
+    }
+    
+    .pre-navbar {
+        width: 100%;
+        padding: 4px 0px;
+        border-top: rgba(163, 163, 163, 0.2) dashed 1px;
+        border-bottom: rgba(163, 163, 163, 0.2) dashed 1px;
+        height: fit-content;
+        background: rgba(0, 0, 0, 0);
+    }
+    
+    .navbar {
+        background-color: rgba(201, 176, 146, 0.1);
+        color: white;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0.7rem;
+        width: 100%;
+        z-index: 1;
+        margin: 0;
+        height: 50px;
+    }
+    
+    .navbar h1 {
+        font-size: 1.7rem;
+    }
+    
+    .navbar-ul {
+        display: flex;
+    }
+    
+    li.nav-contact {
+        padding-right: 0;
+    }
+    
+    .navbar-ul-li {
+        padding: 5px 20px;
+    }
+    
+    .navbar-ul-li a:hover {
+        color: var(--gold-color);
+    }
+    
+    .dropdown button {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 0.7rem 2rem;
+    }
+
+    .navbar-ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+/*DROPDOWN SECTION*/
+    .dropdown-button {
+        background: rgba(0, 0, 0, 0);
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        padding: 5px 20px;
+    }
+    
+    .dropdown-button:hover,
+    .dropdown-button:focus,
+    .dropdown-content a:hover,
+    .dropdown-content a:focus {
+        color: var(--gold-color);
+    }
+
+    .dropdown button {
+        display: block;
+    }
+    
+    .dropdown-content {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 130px;
+        overflow: auto;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+        display: none;
+        margin-top: 19.5px;
+    }
+
+    .navbar-ul-li {
+        padding: 10px 15px;
+    }
+
+    .show {
+        display: block;
+    }
+
+}
